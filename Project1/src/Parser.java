@@ -1,5 +1,9 @@
 import java.util.HashMap;
-
+/**
+ * 
+ * @author Kyle Van Fleet
+ * @Date Jun 18, 2019
+ */
 public class Parser {
 	
 	private Scanner scanner;
