@@ -16,6 +16,7 @@ Core: A Toy Imperative Language
     <expr> ::= <term> | <term> + <expr> | <term> – <expr> <term> ::= <factor> | <factor> * <term>
     <factor> ::= const | id | ( <expr> )
 
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Overview
 
