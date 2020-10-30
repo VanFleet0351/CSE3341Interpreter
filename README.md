@@ -17,7 +17,7 @@ JDK version on stdlinux (to get it, run the subscribe command, log out, log in).
 your code to stdlinux and make sure it works there. I will not spend any time porting your code - if it does not work on stdlinux, I will not grade it.
   The syntax of the language was discussed in class. However, your implementation should be based on the following variations:
   
-    • The production for a statement is ⟨stmt⟩ ::= ⟨assign⟩ | ⟨if⟩ | ⟨loop⟩ | ⟨in⟩ | ⟨out⟩ | ⟨case⟩. Here the case statement is the one defined in              assignment 2.
+    • The production for a statement is ⟨stmt⟩ ::= ⟨assign⟩ | ⟨if⟩ | ⟨loop⟩ | ⟨in⟩ | ⟨out⟩ | ⟨case⟩.
     • The production for input is now ⟨input⟩ ::= input ⟨id-list⟩ ;.
     
   The semantics of this modified language should be obvious; if some aspects of the language are not, please bring it up on piazza or in class for discussion. You need to write a language for the exact language described here. Every valid input program for this language should be executed correctly, and every invalid input program for this language should be rejected with an error message.
