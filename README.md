@@ -2,7 +2,7 @@
 This is a class project for CSE 3341 at Ohio State. It is an interpreter for a toy language called Core.
 
 
-    CSE 3341 Project 1 Overview
+    Overview
 
 The goal of this project is to build an interpreter for a version of the Core language discussed in class. This handout defines a variation of this language;
 make sure you implement an interpreter as described in this handout, not as described in the lecture notes. You must use on of these languages for the 
@@ -105,7 +105,7 @@ Implementation Suggestions
 There are many ways to approach this project. Here are three suggestions:
     • Plan to spend a significant amount of time on the scanner and parser. Once they are working correctly, the printer and executor should be relatively          straightforward.
     
-    • Pick a small subset of the language (e.g. only a few of the grammar productions and implement a fully functioning scanner and parser for that subset.             Do extensive testing. Add more grammar productions. Repeat.
+    • Pick a small subset of the language (e.g. only a few of the grammar productions and implement a fully functioning scanner and parser for that subset. Do extensive testing. Add more grammar productions. Repeat.
     • Start early. The project is too complex to be completed in a few days.
     • Post questions on piazza, and read the questions other students post. You may find details you missed on your own.
     • You are encouraged to share test cases with the class on piazza.
