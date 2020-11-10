@@ -25,6 +25,7 @@ make sure you implement an interpreter as described in this handout, not as desc
 project implementation: C++ or Java. Some constraints on your implementation:
 
 • Do not use scanner generators (e.g. lex, flex, jlex, jflex, ect) or parser generators (e.g. yacc, CUP, ect)
+
 • Do not use functionality from external libraries for complex text processing. However, you can use all functionality from stdlib.h/string.h or 
       java.lang.String.
   
@@ -123,13 +124,3 @@ You should get no differences from diff - everything should be exactly the same.
 myinterpreter bad2.code bad2.data > bad2.out; more bad2.out shoould show an error message “ERROR: ...” in file bad2.out.
 The test cases are very, very weak. You must do extensive testing with your own test cases. Read carefully the lecture notes and be very thorough with all
 details.
-Implementation Suggestions
-
-There are many ways to approach this project. Here are three suggestions:
-    • Plan to spend a significant amount of time on the scanner and parser. Once they are working correctly, the printer and executor should be relatively
-    straightforward.
-    • Pick a small subset of the language (e.g. only a few of the grammar productions and implement a fully functioning scanner and parser for that subset. 
-    Do extensive testing. Add more grammar productions. Repeat.
-    • Start early. The project is too complex to be completed in a few days.
-    • Post questions on piazza, and read the questions other students post. You may find details you missed on your own.
-    • You are encouraged to share test cases with the class on piazza.
