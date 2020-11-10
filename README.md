@@ -1,3 +1,5 @@
+[Home](https://vanfleet0351.github.io/Kyle-Van-Fleet-Portfolio/)
+
 # Toy Language Interpreter
 This is a class project for CSE 3341 at Ohio State. It is an interpreter for a toy language called Core. It was built using java and OOP.
 //TODO:explain more on how it was created
@@ -124,3 +126,5 @@ You should get no differences from diff - everything should be exactly the same.
 myinterpreter bad2.code bad2.data > bad2.out; more bad2.out shoould show an error message “ERROR: ...” in file bad2.out.
 The test cases are very, very weak. You must do extensive testing with your own test cases. Read carefully the lecture notes and be very thorough with all
 details.
+
+[Home](https://vanfleet0351.github.io/Kyle-Van-Fleet-Portfolio/)
