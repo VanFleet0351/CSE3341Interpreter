@@ -1,5 +1,6 @@
 # Toy Language Interpreter
 This is a class project for CSE 3341 at Ohio State. It is an interpreter for a toy language called Core. It was built using java and OOP.
+//TODO:explain more on how it was created
 
 Core: A Toy Imperative Language
 ```
@@ -25,7 +26,6 @@ make sure you implement an interpreter as described in this handout, not as desc
 project implementation: C++ or Java. Some constraints on your implementation:
 
 • Do not use scanner generators (e.g. lex, flex, jlex, jflex, ect) or parser generators (e.g. yacc, CUP, ect)
-
 • Do not use functionality from external libraries for complex text processing. However, you can use all functionality from stdlib.h/string.h or 
       java.lang.String.
   
