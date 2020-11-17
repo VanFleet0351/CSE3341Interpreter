@@ -1,8 +1,11 @@
 [Home](https://vanfleet0351.github.io/Kyle-Van-Fleet-Portfolio/)
 
 # Toy Language Interpreter
-This is a class project for CSE 3341 at Ohio State. It is an interpreter for a toy language called Core. It was built using java and OOP.
-//TODO:explain more on how it was created
+This is a class project for CSE 3341 at Ohio State. It is an interpreter for a toy language called Core. Core is an imperitave language that supports many features of a modern programing like loops, switch cases, stored variables, out put to the console, compile time error reporting, execution time error reporting, etc. 
+
+## The program flow
+
+**The interpreter** takes 2 command line arguments; a .code file containing the program and a .data file containing the integer data associated with the programs variables. The code and data files are passed to the **Scanner**, where the lexical analysis is performed, the files are read character by character to create a queue of tokens. The Scanner is then passed to the **Parser**, where the syntax analysis if performed. The parser creates a parse tree of the program from the stream of tokens provided by the scanner. The program can then be executed to recieve output to the screen or it can have a formatted version of the program printed to the screen. During execution program variables are stored and retrieved from a hashtable at runtime of program to maintain constant time performance.
 
 Core: A Toy Imperative Language
 ```
@@ -22,9 +25,11 @@ Core: A Toy Imperative Language
     <expr> ::= <term> | <term> + <expr> | <term> – <expr>
     <term> ::= <factor> | <factor> * <term>
     <factor> ::= const | id | ( <expr> )
+    <id> ::= <letter> | <id><letter> | <id><digit>
+    <letter> ::= A | B |...| Z | a | b | ... | z
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-# Project Definition
+# Project Definition and Requirments
 ## Overview
 
 The goal of this project is to build an interpreter for a version of the Core language discussed in class. This handout defines a variation of this language;
@@ -52,7 +57,7 @@ The interpreter should have four main components: a lexical analyzer (a.k.a scan
    
 ## Input
 
-   The input to the interpreter will come from two ASCII text files. THe names of these files will be given as command line arguments to the interpreter (i.e. you should be able to access them using the parameters of main). The first file contains the program to be executed. The second file contains the input data on which this program will be executed. Each input statment in the program will read the next data value from the second file. Since Core has only integer variable, the input values in the second file will be integers, separated by spaces and/or tabs and/or newlines. Not that these integers could be negative (e.g. the input stream could be -2 45 0 3 -55).
+   The input to the interpreter will come from two ASCII text files. The names of these files will be given as command line arguments to the interpreter (i.e. you should be able to access them using the parameters of main). The first file contains the program to be executed. The second file contains the input data on which this program will be executed. Each input statment in the program will read the next data value from the second file. Since Core has only integer variable, the input values in the second file will be integers, separated by spaces and/or tabs and/or newlines. Note that these integers could be negative (e.g. the input stream could be -2 45 0 3 -55).
    The scanner should process the sequence of ASCII characters in the first file and should produce a sequence of tokens as input to the parser. The parser performs syntax analysis of this token stream. As discussed in class, getting the tokens is typically done on demand: the parser asks the scanner for the current token, or moves to the next token. There are two options for creating the token stream: (1) upon initialization, the scanner reads the entire program from the file, tokenizes it, and stores all tokens in some list or array, or (2) upon initialization, the scanner reads from the file only enough characters to construct the first token, and then later reads from the file on demand as the parser asks for the next token. Real compilers and interpreters use (2); in your implementation, you can use (1) or (2), whichever you prefer.
    The input program contains a non-empty sequence of ASCII characters. To get them, you should use the C++/Java libraries for I/O. The interpreter should exit back to the OS after processing the entire sequence of input characters. If an unexpected end-of-file is encountered (e.g. in the middle of a program), and error message should be printed and the interpreter should exit back to the OS.
    The first input file contains the source code of the program. For example, the input could be
