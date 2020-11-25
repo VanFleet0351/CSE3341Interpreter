@@ -1,11 +1,11 @@
 [Home](https://vanfleet0351.github.io/Kyle-Van-Fleet-Portfolio/)
 
 # Toy Language Interpreter
-This is a class project for CSE 3341 at Ohio State. It is an interpreter for a toy language called Core. Core is an imperitave language that supports many features of a modern programing like loops, switch cases, stored variables, out put to the console, compile time error reporting, execution time error reporting, etc. 
+This is a class project for CSE 3341 at the Ohio State University. It is an interpreter for a toy language called Core. Core is an imperative language that supports many features of modern programming such as loops, switch cases, stored variables, output to the console, compile time error reporting, execution time error reporting, etc. 
 
 ## The program flow
 
-**The interpreter** takes 2 command line arguments; a .code file containing the program and a .data file containing the integer data associated with the programs variables. The code and data files are passed to the **Scanner**, where the lexical analysis is performed, the files are read character by character to create a queue of tokens. The Scanner is then passed to the **Parser**, where the syntax analysis if performed. The parser creates a parse tree of the program from the stream of tokens provided by the scanner. The program can then be executed to recieve output to the screen or it can have a formatted version of the program printed to the screen. During execution program variables are stored and retrieved from a hashtable at runtime of program to maintain constant time performance.
+**The interpreter** Takes two command line arguments; a .code file containing the program and a .data file containing the integer data associated with the programs variables. The code and data files are passed to the **Scanner**, where the lexical analysis is performed, the files are read character by character to create a queue of tokens. The Scanner is then passed to the **Parser**, where the syntax analysis is performed. The parser creates a parse tree of the program from the stream of tokens provided by the scanner. The program can then be executed to receive output to the screen or it can have a formatted version of the program printed to the screen. During execution, program variables are stored and retrieved from a hashtable at runtime to maintain constant time performance.
 
 Core: A Toy Imperative Language
 ```
@@ -29,7 +29,7 @@ Core: A Toy Imperative Language
     <letter> ::= A | B |...| Z | a | b | ... | z
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-# Project Definition and Requirments
+# Project Definition and Requirements
 ## Overview
 
 The goal of this project is to build an interpreter for a version of the Core language discussed in class. This handout defines a variation of this language;
